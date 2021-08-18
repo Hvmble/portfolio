@@ -7,21 +7,23 @@
 
     <!-- Styles-->
     <link rel="stylesheet" href="public/css/styles.css">
-
+    <!-- Emojis -->
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
     <!-- Icons-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Mauricio Montoya Abadía | Web Developer</title>
+    <title>Mauricio Montoya | Web Developer</title>
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- Header -->
     <header class="header">
-        <nav class="nav bd-grid">
+        <nav class="nav">
             <div>
-                <a href="#" class="nav__logo">Mauricio Montoya</a>
+                <a href="#home" class="logo">Mauricio Montoya</a>
             </div>
-
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
@@ -32,120 +34,185 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <div class="menu__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
+    <main>
+        <!-- Home -->
+        <section class="home bd__grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mauricio </span><br> Web Developer</h1>
-
-                <a href="#" class="button">Contact</a>
+                <h1 class="home__title">
+                    Hi!,<br> I'm <span class="home__title-color">Mauricio<br>
+                        <span class="typed"></span>
+                </h1>
+                <div class="home__title" id="text-strings">
+                    <p><i class="home__i">{ Web Developer } </i></p>
+                    <p><i class="home__i">[ Software Developer ]</i></p>
+                </div>
+                <a href="mailto:mmontoyaabadia@gmail.com" target="_blank" class="button"> Contact</a>
             </div>
 
             <div class="home__social">
-                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mauricio-montoya-abadia/" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/mamoabadia/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Hvmble" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
             </div>
 
             <div class="home__img">
-                <img src="public/img/perfil.png" alt="">
+                <img src="public/img/home.png" alt="photoHome">
             </div>
         </section>
 
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+        <!-- About -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About</h2>
 
-            <div class="about__container bd-grid">
+            <div class="about__container bd__grid">
                 <div class="about__img">
-                    <img src="public/img/about.jpg" alt="">
+                    <img src="public/img/about.png" alt="photoProfile">
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Marlon</h2>
-                    <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum
-                        expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo
-                        recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
+                    <h2 class="about__subtitle">I'am Mauricio</h2>
+                    <p class="about__text">
+                        I really enjoy solving problems and making things nice and easy to use. I can't stop learning
+                        new things &#128187 ; the more the better. I also love &#128153 photography, a hobby that
+                        allowed me to see
+                        creativity as a learning skill &#128200.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
+        <!-- Skills -->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section__title">Skills</h2>
 
-            <div class="skills__container bd-grid">
-                <div>
+            <div class="skills__container bd__grid-skill">
+                <div class="center">
                     <h2 class="skills__subtitle">Profesional Skills</h2>
                     <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id
                         vero amet, alias architecto consectetur error eum eaque sit.</p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
+                    <div class="skills__container-card">
+                        <div class="card">
+                            <div class="skills__card-front skills__card-front-one">
+                                <div class="icon">
+                                    <i class='bx bxl-html5'></i>
+                                </div>
+                            </div>
+                            <div class="skills__card-front skills__card-back">
+                                <div class="content">
+                                    <h3 class="h3">
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">HTML</a>
+                                    </h3>
+                                    <p class="skills__P">HyperText Markup Language</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__bar skills__html">
-
+                        <div class="card">
+                            <div class="skills__card-front skills__card-front-one">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class='bx bxl-css3'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__card-front skills__card-back">
+                                <div class="content">
+                                    <h3 class="h3">
+                                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS</a>
+                                    </h3>
+                                    <p class="skills__P">Cascading Style Sheets</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">95%</span>
+                        <div class="card">
+                            <div class="skills__card-front skills__card-front-one">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class='bx bxl-javascript'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__card-front skills__card-back">
+                                <div class="content">
+                                    <h3 class="h3 skill__title-js">
+                                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">JAVASCRIPT</a>
+                                    </h3>
+                                    <p class="skills__P">Lightweight Programming Language</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
+                        <div class="card">
+                            <div class="skills__card-front skills__card-front-one">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class='bx bxl-php' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__card-front skills__card-back">
+                                <div class="content">
+                                    <h3 class="h3">
+                                        <a href="https://www.php.net/manual/es/preface.php" target="_blank">PHP</a>
+                                    </h3>
+                                    <p class="skills__P">Hypertext Preprocessor</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__bar skills__css">
-
+                        <div class="card">
+                            <div class="skills__card-front skills__card-front-one">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class='bx bxl-git'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__card-front skills__card-back">
+                                <div class="content">
+                                    <h3 class="h3">
+                                        <a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git" target="_blank">GIT</a>
+                                    </h3>
+                                    <p class="skills__P">Version Management Software</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JAVASCRIPT</span>
-                        </div>
-                        <div class="skills__bar skills__js">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
+                        <div class="card">
+                            <div class="skills__card-front skills__card-front-one">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class='bx bxl-python bx-lg'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__card-front skills__card-back">
+                                <div class="content">
+                                    
+                                    <h3 class="h3">
+                                        <a href="https://www.python.org/" target="_blank">PYTHON</a>
+                                    </h3>
+                                    <p class="skills__P">Interpreted programming language</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div>
-                    <img src="public/img/work3.jpg" alt="" class="skills__img">
+                    <img src="public/img/skill.png" alt="photoSkill" class="skills__img">
                 </div>
             </div>
         </section>
 
-        <!--===== WORK =====-->
+        <!-- Work -->
         <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
-
-            <div class="work__container bd-grid">
+            <h2 class="section__title">Work</h2>
+            <div class="work__container bd__grid">
                 <div class="work__img">
                     <img src="public/img/work1.jpg" alt="">
                 </div>
@@ -167,11 +234,11 @@
             </div>
         </section>
 
-        <!--===== CONTACT =====-->
+        <!-- Contact 
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section__title">Contact</h2>
 
-            <div class="contact__container bd-grid">
+            <div class="contact__container bd__grid">
                 <form action="" class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
@@ -180,24 +247,31 @@
                 </form>
             </div>
         </section>
+        -->
     </main>
 
-    <!--===== FOOTER =====-->
+    <!-- Footer -->
     <footer class="footer">
-        <p class="footer__title">Marlon</p>
+        <p class="footer__title">Mauricio Montoya Abadía</p>
         <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/mauricio-montoya-abadia/" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/mamoabadia/" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Hvmble" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-github'></i></a>
         </div>
-        <p>&#169; 2020 copyright all right reserved</p>
+        <p>&#169; 2021 copyright all right reserved</p>
     </footer>
 
 
-    <!--===== SCROLL REVEAL =====-->
+    <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--===== MAIN JS =====-->
+    <!-- Typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Main JS  -->
     <script src="public/js/main.js"></script>
 </body>
 
