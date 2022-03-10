@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Styles-->
     <link rel="stylesheet" href="public/css/styles.css">
     <!-- Emojis -->
@@ -12,7 +16,9 @@
     <!-- Icons-->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- Normalize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Mauricio Montoya | Web Developer</title>
 </head>
@@ -29,8 +35,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                 </ul>
             </div>
 
@@ -48,13 +53,17 @@
                     Hi!,<br> I'm <span class="home__title-color">Mauricio<br>
                         <span class="typed"></span>
                 </h1>
+                <div class="home__img">
+                    <img src="public/img/about.png" alt="photoHome">
+                </div>
                 <div class="home__title" id="text-strings">
                     <p><i class="home__i">{ Web Developer } </i></p>
                     <p><i class="home__i">[ Software Developer ]</i></p>
                 </div>
                 <a href="mailto:mmontoyaabadia@gmail.com" target="_blank" class="button"> Contact</a>
+                
             </div>
-
+            
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/mauricio-montoya-abadia/" target="_blank"
                     class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
@@ -64,9 +73,7 @@
                         class='bx bxl-github'></i></a>
             </div>
 
-            <div class="home__img">
-                <img src="public/img/home.png" alt="photoHome">
-            </div>
+            
         </section>
 
         <!-- About -->
@@ -75,18 +82,27 @@
 
             <div class="about__container bd__grid">
                 <div class="about__img">
-                    <img src="public/img/about.png" alt="photoProfile">
+                    <img src="public/img/home.png" alt="photoProfile">
                 </div>
 
                 <div>
                     <h2 class="about__subtitle">I'am Mauricio</h2>
                     <p class="about__text">
-                        I really enjoy solving problems and making things nice and easy to use. I can't stop learning
+                        Web developer, I really enjoy solving problems and making things nice and easy to use. I can't
+                        stop learning
                         new things &#128187 ; the more the better. I also love &#128153 photography, a hobby that
                         allowed me to see
                         creativity as a learning skill &#128200.
                     </p>
+                    <div class="about__buttons">
+                        <a
+                            href="/curriculum/cv.html"
+                            target="_blank"
+                            class="button button--flex"
+                            > View CV <i class='bx bx-link-external'></i> </a>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -97,8 +113,8 @@
             <div class="skills__container bd__grid-skill">
                 <div class="center">
                     <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id
-                        vero amet, alias architecto consectetur error eum eaque sit.</p>
+                    <p class="skills__text">Web developer, with 2 years of experience, working in web technologies,
+                        delivering quality work.</p>
                     <div class="skills__container-card">
                         <div class="card">
                             <div class="skills__card-front skills__card-front-one">
@@ -109,7 +125,8 @@
                             <div class="skills__card-front skills__card-back">
                                 <div class="content">
                                     <h3 class="h3">
-                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">HTML</a>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML"
+                                            target="_blank">HTML</a>
                                     </h3>
                                     <p class="skills__P">HyperText Markup Language</p>
                                 </div>
@@ -143,7 +160,8 @@
                             <div class="skills__card-front skills__card-back">
                                 <div class="content">
                                     <h3 class="h3 skill__title-js">
-                                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">JAVASCRIPT</a>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                                            target="_blank">JAVASCRIPT</a>
                                     </h3>
                                     <p class="skills__P">Lightweight Programming Language</p>
                                 </div>
@@ -153,7 +171,7 @@
                             <div class="skills__card-front skills__card-front-one">
                                 <div class="content">
                                     <div class="icon">
-                                        <i class='bx bxl-php' ></i>
+                                        <i class='bx bxl-php'></i>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +195,8 @@
                             <div class="skills__card-front skills__card-back">
                                 <div class="content">
                                     <h3 class="h3">
-                                        <a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git" target="_blank">GIT</a>
+                                        <a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git"
+                                            target="_blank">GIT</a>
                                     </h3>
                                     <p class="skills__P">Version Management Software</p>
                                 </div>
@@ -193,7 +212,7 @@
                             </div>
                             <div class="skills__card-front skills__card-back">
                                 <div class="content">
-                                    
+
                                     <h3 class="h3">
                                         <a href="https://www.python.org/" target="_blank">PYTHON</a>
                                     </h3>
@@ -208,46 +227,72 @@
                 </div>
             </div>
         </section>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent works</span>
 
-        <!-- Work -->
-        <section class="work section" id="work">
-            <h2 class="section__title">Work</h2>
-            <div class="work__container bd__grid">
-                <div class="work__img">
-                    <img src="public/img/work1.jpg" alt="">
+            <div class="portfolio__container container swiper-container ">
+                <div class="swiper-wrapper">
+                    <!-- Work 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img
+                            src="public/img/portfolio1.jpg"
+                            alt=""
+                            class="portfolio__img"
+                        />
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Laravel Application</h3>
+                            <p class="portfolio__description">
+                                Recruitment and selection of personnel, has functionality to register, create, edit, delete, search and view vacancies. other options like viewing candidates and resumes
+                            </p>
+                            <a
+                                href="http://coldisama.herokuapp.com/"
+                                class="button--work button--flex button--small portfolio__button"
+                                target="_blank"
+                            >
+                                Demo <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- Work 3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="public/img/portfolio2.jpg" alt="" class="portfolio__img" />
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Personal Portfolio</h3>
+                            <p class="portfolio__description">
+                                Website adaptable to all devices, with ui components and
+                                animated interactions.
+                            </p>
+
+                            <a
+                                href="https://www.mauriciomontoya.co/"
+                                class="button--work button--flex button--small portfolio__button"
+                            >
+                                Demo <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="work__img">
-                    <img src="public/img/work2.jpg" alt="">
+
+                <!-- Add controls -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                 </div>
-                <div class="work__img">
-                    <img src="public/img/work3.jpg" alt="">
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
-                <div class="work__img">
-                    <img src="public/img/work4.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="public/img/work5.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="public/img/work6.jpg" alt="">
-                </div>
+
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-        </section>
-
-        <!-- Contact 
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact</h2>
-
-            <div class="contact__container bd__grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
-                </form>
-            </div>
-        </section>
-        -->
+        </section> 
     </main>
 
     <!-- Footer -->
@@ -261,18 +306,21 @@
             <a href="https://github.com/Hvmble" target="_blank" class="home__social-icon"><i
                     class='bx bxl-github'></i></a>
         </div>
-        <p>&#169; 2021 copyright all right reserved</p>
+        <p>&#169; 2022 copyright all right reserved</p>
     </footer>
 
-
-    <!-- Scroll Reveal -->
+<!--==================== SCROLL TOP ====================-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+    <!-- ==================== SCROLL REVEAL ==================== -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!--==================== SWIPER JS ====================-->
+    <script src="public/js/swiper-bundle.min.js"></script>
 
-    <!-- Typed -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--==================== TYPED JS ====================-->
+    <script src="public/js/typed.js"></script>
 
-    <!-- Main JS  -->
+    <!--==================== MAIN JS ====================-->
     <script src="public/js/main.js"></script>
-</body>
-
 </html>

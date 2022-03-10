@@ -51,10 +51,7 @@ sr.reveal('.skills__container-card',{interval: 200});
 sr.reveal('.skills__img',{delay: 600});
 
 /*Scroll Work*/
-sr.reveal('.work__img',{interval: 200}); 
-
-/*Scroll Contact*/
-sr.reveal('.contact__input',{interval: 200});
+sr.reveal('.portfolio__container', { delay: 200 });
 
 
 /* Typed */
@@ -73,4 +70,25 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', 
 	contentType: 'html', 
 });
+/*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+/*==================== SCROLL UP ====================*/
+function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
 

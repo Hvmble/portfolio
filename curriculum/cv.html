@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <!--=========== FONT AWESOM ICONS ===============-->
+  <script src="https://kit.fontawesome.com/1242e5e86d.js" crossorigin="anonymous"></script>
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="shortcut icon" href="assets/img/perfil.jpg" type="image/x-icon" />
+  <title>Mauricio Montoya CV</title>
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Mauricio</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home nav__icon"></i>Inicio
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>Perfil
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="bx bx-book nav__icon"></i>Educación
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-receipt nav__icon"></i>Skills
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i>Experiencia
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#certificates" class="nav__link">
+              <i class="bx bx-award nav__icon"></i>Certificados
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#references" class="nav__link">
+              <i class="bx bx-link-external nav__icon"></i>Referencias
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <img src="assets/img/perfil.jpg" alt="" class="home__img" />
+              <h1 class="home__title">Mauricio <b>Montoya</b></h1>
+              <h3 class="home__profession">Ingeniero en Sistemas</h3>
+
+              <!-- Button to generate and download the pdf. Available for desktop. -->
+              <div>
+                <a href="" target="_blank" class="home__button-movil">Download</a>
+              </div>
+            </div>
+
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-map home__icon"></i> Cartago, Valle del Cauca
+                - Colombia
+              </span>
+              <span class="home__information">
+                <i class="bx bx-envelope home__icon"></i>
+                mmontoyaabadia@gmail.com
+              </span>
+              <span class="home__information">
+                <i class="bx bx-phone home__icon"></i> 3206718515
+              </span>
+            </div>
+          </div>
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+          <!-- Button to generate and download the pdf. Available for desktop. -->
+          <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+        </section>
+
+        <!--========== SOCIAL ==========-->
+        <section class="social section">
+          <h2 class="section-title">Social</h2>
+
+          <div class="social__container bd-grid">
+            <a href="https://www.linkedin.com/in/mauricio-montoya-abadia/" target="_blank" class="social__link">
+              <i class="bx bxl-linkedin-square social__icon"></i>
+              @mauriciomontoya
+            </a>
+            <a href="https://www.instagram.com/mamoabadia/" target="_blank" class="social__link">
+              <i class="bx bxl-instagram social__icon"></i> @mauriciomontoya
+            </a>
+            <a href="https://www.mauriciomontoya.co/" target="_blank" class="social__link">
+              <i class="bx bx-globe social__icon"></i>www.mauriciomontoya.co
+            </a>
+          </div>
+        </section>
+
+        <!--========== PROFILE ==========-->
+        <section class="profile section" id="profile">
+          <h2 class="section-title">Perfil</h2>
+          <p class="profile__description">
+            Soy Estudiante de Ingeniería de Sistemas con más de un año de
+            experiencia en desarrollo web y administración TI. Aportar
+            soluciones, trabajar en equipo, liderar proyectos, responsabilidad
+            y respeto por mi trabajo son algunas de las características de mi
+            vida profesional.
+          </p>
+        </section>
+
+        <!--========== EDUCATION ==========-->
+        <section class="education section" id="education">
+          <h2 class="section-title">Educación</h2>
+
+          <div class="education__container bd-grid">
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">
+                  <a href="https://drive.google.com/file/d/1yQs8ysjtcDNyMyYtVq6nvjN7gjCmH7lr/view?usp=sharing"
+                    target="_blank" class="social__link">Tecnología MECDICE <i class="bx bx-medal"></i>
+                  </a>
+                </h3>
+                <span class="education__studies">Servicio Nacional de Aprendizaje</span>
+                <span class="education__year">2014 - 2016</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">
+                  <a href="https://miremingtonedu-my.sharepoint.com/:b:/g/personal/cristian_orrego_8342_miremingtonedu_onmicrosoft_com/EQ7mDSSqYl1HkCS72a9-hwcBE3aA_tsoFK6XdvorlGkI8w?e=gXtOCa"
+                    target="_blank" class="social__link">Ingeniería en Sistemas<i class="bx bx-medal"></i></a>
+                </h3>
+                <span class="education__studies">Corporación de Estudios Tecnológicos del Norte del
+                  Valle.</span>
+                <span class="education__year">2017 - 2022</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <!-- <span class="education__line"></span> -->
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">
+                  Desarrollo Web
+                  <a href="#" target="_blank" class="social__link"><i class="bx bx-medal"></i></a>
+                </h3>
+                <span class="education__studies">Udemy y Platzi</span>
+                <span class="education__year">Desde 2020</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--========== SKILLS  ==========-->
+        <section class="skills section" id="skills">
+          <h2 class="section-title">Skills</h2>
+
+          <div class="skills__content bd-grid">
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span> Php
+                <i class="fab fa-php skills__icon"></i>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Html<i class="fab fa-html5 skills__icon"></i>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Css<i class="fab fa-css3-alt skills__icon"></i>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> JavaScript<i class="fab fa-js-square skills__icon"></i>
+              </li>
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span>Laravel<i class="fab fa-laravel skills__icon"></i>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>MySQL<i class="fas fa-database skills__icon"></i>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>Git
+                <i class="fab fa-git-alt skills__icon"></i>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="resume__right">
+        <!--========== EXPERIENCE ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section-title">Experiencia</h2>
+
+          <div class="experience__container bd-grid">
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">
+                  Auxiliar - Administrador TIC
+                </h3>
+                <span class="experience__company">Desde el año 2017 hasta el año 2018 | Universidad del
+                  Valle</span>
+                <p class="experience__description">
+                  Trabajé en la institución realizando servicio de mantenimiento a
+                  equipos de cómputo, administración y soporte de la página
+                  web institucional y programas corporativos, brindado asi a
+                  toda la comunidad universitaria un buen servicio y
+                  desarrollo tecnológico.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Freelance</h3>
+                <span class="experience__company">Desde el año 2021 hasta la fecha | Asociación Recuperando
+                  Esperanza</span>
+                <p class="experience__description">
+                  Realizar soporte técnico a la página web institucional llevando a
+                  cabo actualizaciones de seguridad, realizando formularios,
+                  cambios de las imágenes, crear enlaces, cambiar los datos de
+                  contacto, etc.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <!-- <span class="experience__line"></span> -->
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Técnico Gestión Documental</h3>
+                <span class="experience__company">Desde 2019 hasta 2021 | Universidad del Valle
+                </span>
+                <p class="experience__description">
+                  En esta labor específica con la institución he adquirido
+                  conocimientos y habilidades en sistemas de gestión documental.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--========== CERTIFICATES ==========-->
+        <section class="certificate section" id="certificates">
+          <h2 class="section-title">Cursos</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">
+                <a href="https://platzi.com/p/mmontoyaabadia/curso/2467-frontend-developer/diploma/detalle/"
+                  target="_blank" class="social__link">
+                  Curso de Frontend Developer <i class="bx bx-award"></i>
+                </a>
+              </h3>
+              <p class="certificated__description">
+                Dominar las bases de HTML, CSS, JavaScript.
+              </p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">
+                <a href="https://platzi.com/p/mmontoyaabadia/curso/1557-git-github/diploma/detalle/" target="_blank"
+                  class="social__link">
+                  Curso Profesional de Git y GitHub
+                  <i class="bx bx-award"></i>
+                </a>
+              </h3>
+              <p class="certificated__description">
+                Control de Versiones en tus Proyectos con Git.
+              </p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">
+                <a href="https://drive.google.com/file/d/1yNPgWGbsrUDDy9rbEagDQl5KgZanA6un/view?usp=sharing"
+                  target="_blank" class="social__link">
+                  IT Essentials <i class="bx bx-award"></i>
+                </a>
+              </h3>
+              <p class="certificated__description">
+                Función de los componentes de un ordenador, su ensamblaje y
+                configuración
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--========== REFERENCES ==========-->
+        <section class="references section" id="references">
+          <h2 class="section-title">Referencias</h2>
+
+          <div class="references__container bd-grid">
+            <div class="references__content bd-grid">
+              <span class="references__subtitle">Ingeniero</span>
+              <h3 class="references__title">Sr. Cristian Orrego</h3>
+              <ul class="references__contact">
+                <li>Phone: 311 398 8094</li>
+                <li>Email: cristian.duquew@gmail.com</li>
+              </ul>
+            </div>
+
+            <div class="references__content bd-grid">
+              <span class="references__subtitle">Contador</span>
+              <h3 class="references__title">Sr. Jhoan Andrés Rico Trejos</h3>
+              <ul class="references__contact">
+                <li>Phone: 317 762 7176</li>
+                <li>Email: jhoanbetin@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!--========== LANGUAGES ==========-->
+        <section class="languages section">
+          <h2 class="section-title">Idiomas</h2>
+
+          <div class="languages__container">
+            <ul class="languages__content bd-grid">
+              <li class="languages__name">
+                <span class="languages__circle"></span> Español
+              </li>
+              <li class="languages__name">
+                <span class="languages__circle"></span> Ingles
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== INTERESTS ==========-->
+        <section class="interests section">
+          <h2 class="section-title">Intereses</h2>
+
+          <div class="interests__container bd-grid">
+            <div class="interests__content">
+              <i class="bx bx-cycling interests__icon"></i>
+              <span class="interests__name">Ciclismo</span>
+            </div>
+            <div class="interests__content">
+              <i class="bx bx-camera interests__icon"></i>
+              <span class="interests__name">Fotografía</span>
+            </div>
+            <div class="interests__content">
+              <i class="bx bx-book-open interests__icon"></i>
+              <span class="interests__name">Lectura</span>
+            </div>
+            <div class="interests__content">
+              <i class="bx bxs-plane-alt interests__icon"></i>
+              <span class="interests__name">Viajar</span>
+            </div>
+            <div class="interests__content">
+              <i class="bx bx-headphone interests__icon"></i>
+              <span class="interests__name">Música</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+  </a>
+  <!--========== HTML2PDF ==========-->
+  <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
